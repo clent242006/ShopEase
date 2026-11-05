@@ -1,0 +1,234 @@
+
+.staff-page {
+  min-height: 100vh;
+  padding: 30px;
+  color: #f1f5f9;
+  background: #0b1120;
+}
+
+.staff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.staff-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.staff-header p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.staff-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.staff-actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.staff-refresh {
+  color: #38bdf8;
+  background: #111c32;
+  border: 1px solid #164e63;
+}
+
+.staff-add,
+.staff-save {
+  color: #07111f;
+  background: #38bdf8;
+  border: none;
+}
+
+.staff-add:hover,
+.staff-save:hover {
+  background: #7dd3fc;
+}
+
+.staff-message {
+  padding: 13px;
+  margin-bottom: 20px;
+  color: #7dd3fc;
+  background: #082f49;
+  border: 1px solid #075985;
+  border-radius: 8px;
+}
+
+.staff-summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  margin-bottom: 22px;
+  background: #111c32;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+}
+
+.staff-summary svg {
+  color: #38bdf8;
+}
+
+.staff-summary p {
+  margin: 0 0 6px;
+  color: #94a3b8;
+}
+
+.staff-summary h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.staff-card {
+  padding: 22px;
+  margin-bottom: 22px;
+  background: #111c32;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.staff-card h2 {
+  margin: 0 0 20px;
+  color: #38bdf8;
+  font-size: 19px;
+}
+
+.staff-card form {
+  display: grid;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.staff-card label {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.staff-card input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #f1f5f9;
+  background: #0b1120;
+  border: 1px solid #334155;
+  border-radius: 7px;
+  outline: none;
+}
+
+.staff-card input:focus {
+  border-color: #38bdf8;
+}
+
+.staff-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.staff-form-actions button {
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.staff-cancel {
+  color: #cbd5e1;
+  background: #334155;
+  border: none;
+}
+
+.staff-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.staff-card table {
+  width: 100%;
+  min-width: 550px;
+  border-collapse: collapse;
+}
+
+.staff-card th,
+.staff-card td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #26364d;
+  font-size: 14px;
+}
+
+.staff-card th {
+  color: #38bdf8;
+  background: #0b1120;
+}
+
+.staff-card td {
+  color: #cbd5e1;
+}
+
+.staff-card tbody tr:hover {
+  background: #17243b;
+}
+
+.staff-role {
+  padding: 5px 10px;
+  color: #38bdf8;
+  background: #082f49;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.staff-row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.staff-row-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: #38bdf8;
+  background: #0b1120;
+  border: 1px solid #164e63;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.staff-row-actions button:last-child {
+  color: #fb7185;
+  border-color: #7f1d1d;
+}
+
+@media (max-width: 700px) {
+  .staff-page {
+    padding: 18px;
+  }
+
+  .staff-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .staff-header h1 {
+    font-size: 23px;
+  }
+
+  .staff-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

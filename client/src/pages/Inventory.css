@@ -1,0 +1,159 @@
+
+.inventory-page {
+  padding: 30px;
+  color: #f1f5f9;
+  min-height: 100vh;
+  background: #0b1120;
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.inventory-header h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.inventory-header p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.inventory-refresh {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  color: #38bdf8;
+  background: #111c32;
+  border: 1px solid #164e63;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inventory-card {
+  background: #111c32;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.inventory-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #38bdf8;
+  font-size: 19px;
+  margin: 0 0 20px;
+}
+
+.inventory-card form {
+  display: grid;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.inventory-card label {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.inventory-card input,
+.inventory-card select {
+  width: 100%;
+  padding: 12px;
+  color: #f1f5f9;
+  background: #0b1120;
+  border: 1px solid #334155;
+  border-radius: 7px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inventory-card input:focus,
+.inventory-card select:focus {
+  border-color: #38bdf8;
+}
+
+.inventory-card select option {
+  background: #111c32;
+  color: #f1f5f9;
+}
+
+.inventory-card form button {
+  margin-top: 10px;
+  padding: 12px;
+  color: #07111f;
+  background: #38bdf8;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.inventory-card form button:hover {
+  background: #7dd3fc;
+}
+
+.inventory-message {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  color: #7dd3fc;
+  background: #082f49;
+  border: 1px solid #075985;
+  border-radius: 8px;
+}
+
+.inventory-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.inventory-card table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.inventory-card th,
+.inventory-card td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #26364d;
+  font-size: 14px;
+}
+
+.inventory-card th {
+  color: #38bdf8;
+  background: #0b1120;
+}
+
+.inventory-card td {
+  color: #cbd5e1;
+}
+
+.inventory-card tbody tr:hover {
+  background: #17243b;
+}
+
+@media (max-width: 700px) {
+  .inventory-page {
+    padding: 18px;
+  }
+
+  .inventory-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .inventory-header h1 {
+    font-size: 23px;
+  }
+}
